@@ -13,22 +13,8 @@ typedef struct {
     bool isLocked;
 } User;
 
-void display_admin_menu() {
-}
-
-void addUser() {
-}
-
-void show_users() {
-
-}
-
-void search_user_by_name() {
-
-}
 User users[100];
 int userCount = 0;
-
 
 void sortedUsers() {
 	int choice;
