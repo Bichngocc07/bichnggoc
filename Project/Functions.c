@@ -12,7 +12,7 @@ typedef struct {
     int birthDay, birthMonth, birthYear;
     bool isLocked;
 } User;
-// khong co address
+
 void display_admin_menu() {
 }
 
@@ -29,7 +29,7 @@ void search_user_by_name() {
 User users[100];
 int userCount = 0;
 
-//////
+
 void sortedUsers() {
 	int choice;
 	printf("\nChoose how to sort the user list:\n");
@@ -70,7 +70,7 @@ void sortedUsers() {
     //
     displayUserList();
 }
- //
+ 
 void displayStartMenu() {
     printf("\n*** Bank Management System Using C ***\n\n");
     printf("               CHOOSE YOUR ROLE            \n");
@@ -164,10 +164,10 @@ void displayUserList() {
 			users[i].isLocked ? "Lock" : "Unlock");
     }
     printf("|================================================================================================|\n");
-    // o cai ham nay thuc thi
+    
 }
 
-/////////////////////////////
+
 void sortUses(int choice){
 	for (int i = 0; i < userCount - 1; i++){
 		for (int j = i +1; j < userCount; j++){
@@ -195,7 +195,7 @@ void searchUserByName() {
         }
     }
 }
-////////////////////////////
+
 void displayUserDetails() {
 	system("cls");
     char id[20];
@@ -222,7 +222,7 @@ void displayUserDetails() {
         printf("\nError: User with ID %s not found.\n", id);
     }
 }
-//////////////////////////////////////////////////////////////// chua xem
+
 void findUserByID(User users[], int userCount, int searchID) {
     int found = 0;
     for (int i = 0; i < userCount; i++) {
@@ -244,7 +244,7 @@ void findUserByID(User users[], int userCount, int searchID) {
             printf("\nError: User with name %s not found.\n", searchID);
     }
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 void displayUserID(User users[], int userCount, int searchID) {
 	system("cls");
     int found = 0;
@@ -279,8 +279,7 @@ void displayUserID(User users[], int userCount, int searchID) {
                 exit(0);
             }
 }
-///////////////////////////////////////////////////////////// cham cham
-// Ham khoa / mo khoa nguoi dung
+
 void lockUnlockUser() {
 	system("cls");
     char id[20];
@@ -308,7 +307,7 @@ void lockUnlockUser() {
         printf("\nError: User with ID %s not found.\n", id);
     }
 }
-/////////////////////////
+
 void displayUserName(){
 	system("cls");
 	char name[20];
@@ -334,7 +333,7 @@ void displayUserName(){
         printf("\nError: User with name %s not found.\n", name);
     }
 }
-/////////////////////////////
+
 void displayAdminMenu(){
         printf("\n*** Bank Management System Using C ***\n");
         printf("                    MENU                 \n");
